@@ -9,7 +9,7 @@ public class Edge
 {
 	Vertex toVertex; //Vertex it is going to
 	Vertex fromVertex; //Vertex it is coming from
-	double length;
+	double length; //Length of edge
 
 	public Edge( Vertex f, Vertex t )
 	{
@@ -18,7 +18,8 @@ public class Edge
 
 		length = getLength();
 	}
-
+	
+	//Calculates the length of the edge
 	public double getLength()
 	{
 		length = Math.sqrt(  ((toVertex.x-fromVertex.x)*(toVertex.x-fromVertex.x)) + ((toVertex.y-fromVertex.y)*(toVertex.y-fromVertex.y))  );

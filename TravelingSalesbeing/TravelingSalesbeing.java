@@ -12,8 +12,7 @@ public class TravelingSalesbeing extends JFrame implements ActionListener
 {
 	Map theMap;
 	JPanel northPanel;
-	JButton add;
-	int amount2;
+	JButton add; //Button to add more dots
 
 	public static void main (String[] args )
 	{

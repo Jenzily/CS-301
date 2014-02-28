@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Graph
 {
-   LinkedList <Vertex> vertices;
+   LinkedList <Vertex> vertices; //List of vertices
    
    public Graph()
    {

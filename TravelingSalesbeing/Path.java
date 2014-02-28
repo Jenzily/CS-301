@@ -1,3 +1,6 @@
+//Path.java
+//McKenzie Bradley for CS301, Fall 2013
+
 package travelingSalesbeing;
 
 import java.awt.*;
@@ -7,19 +10,21 @@ public class Path
 {
 	int cost;
 
-	LinkedList <Edge> pathSteps;
+	LinkedList <Edge> pathSteps; //List of edges that make up the path
 
 	public Path()
 	{
 		pathSteps = new LinkedList <Edge> ();
 	}
 
+	//Adds an edge to the list
 	public void add(Edge e)
 	{
 		pathSteps.add(e);
 		setCost();
 	}
 
+	//Sets the cost of the path by adding together all the lengths of edges in the list
 	public void setCost()
 	{
 		cost = 0;
