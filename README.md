@@ -1,3 +1,3 @@
-CS301
+CS 301 - Data Structures & Algorithms
 =====
-Ermmmmmm Yes
+These programs were created for the course Data Structures and Algorithms, Fall 2013 at Meredith College.
