@@ -1,3 +1,6 @@
+//Objects.java
+//McKenzie Bradley for CS301, Fall 2013
+
 package storage;
 
 import java.awt.*;
@@ -14,58 +17,23 @@ public class Objects
 		parent=leftie=rightie=null;
 	}
 	
-	public void setValue(int num1)
+	public void setValue(int num1) //Sets the value of this object
 	{
 		num = num1;
 	}
 	
-	public int getValue()
+	public int getValue() //Returns the value of this object
 	{
 		return num;
 	}
 	
-	/*public void setParent(String parent1)
-	{
-		parent = parent1;
-	}*/
-	
-	public void setLeftie(Objects l)
+	public void setLeftie(Objects l) //Sets the left leaf
 	{
 		leftie = l;
 	}
 	
-	public void setRightie(Objects r)
+	public void setRightie(Objects r) //Sets the right leaf
 	{
 		rightie = r;
 	}
-	
-    public boolean isLeftie()
-    {
-        boolean isLeftie = false;
-        if ( parent != null )
-        {
-            if ( parent.leftie == this ) { isLeftie = true; }
-        }
-        return isLeftie;
-    }
-    
-    public boolean isRightie()
-    {
-        boolean isRightie = false;
-        if ( parent != null )
-        {
-            if ( parent.rightie == this ) { isRightie = true; }
-        }
-        return isRightie;
-    }
-    
-    public boolean isLeaf()
-    {
-    	boolean isLeaf = false;
-    	if(rightie==null && leftie==null)
-    	{
-    		isLeaf = true;
-    	}
-    	return isLeaf;
-    }
 }
